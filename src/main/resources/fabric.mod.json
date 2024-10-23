@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mattimodrecources",
+	"version": "${version}",
+	"name": "MattiModRecources",
+	"description": "the assets and the data for the MattiMod.jar",
+	"authors": [
+		"mploes6"
+	],
+	"contact": {
+		"homepage": "homepage",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mattimodrecources/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"at.mploes6.mattimodrecources.MattiModRecources"
+		],
+		"fabric-datagen": [
+			"at.mploes6.mattimodrecources.MattiModRecourcesDataGenerator"
+		],
+		"client": [
+			"at.mploes6.mattimodrecources.MattiModRecourcesClient"
+		]
+	},
+	"mixins": [
+		"mattimodrecources.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
